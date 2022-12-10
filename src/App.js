@@ -1,23 +1,38 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+
+function Header() {
+  return(
+    <div className="header">
+       <div className="container">
+        <div className="header_logo">
+         <img width="38" src="" alt="Pizza logo" />
+          <div>
+            <h1>React pizza</h1>
+            <p>Вкусная пицца</p>
+          </div>
+        </div>
+        <div className="header_cart">
+          <a href="/cart.html" className="button button--cart">
+            <span>24руб.</span>
+          </a>
+        </div>
+       </div>
+    </div>
+  );
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='wrapper'>
+      <Header />
+      <div className="container">
+        <div className='container'>
+          <div className='header_logo'>
+           
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
